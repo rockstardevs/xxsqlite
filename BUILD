@@ -6,6 +6,7 @@ cc_library(
     hdrs = glob([
         "src/**/*.hpp",
     ]),
+    linkopts = ["-psqlite"],
     strip_include_prefix = "src",
     visibility = ["//visibility:public"],
 )
